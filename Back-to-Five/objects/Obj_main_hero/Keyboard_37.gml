@@ -1,1 +1,0 @@
-spr_main_hero = spr_main_hero_left

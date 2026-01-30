@@ -25,17 +25,16 @@
   "name":"Back-to-Five",
   "resources":[
     {"id":{"name":"Obj_main_hero","path":"objects/Obj_main_hero/Obj_main_hero.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"tutorial","path":"rooms/tutorial/tutorial.yy",},},
     {"id":{"name":"spr_main_hero_down","path":"sprites/spr_main_hero_down/spr_main_hero_down.yy",},},
     {"id":{"name":"spr_main_hero_left","path":"sprites/spr_main_hero_left/spr_main_hero_left.yy",},},
     {"id":{"name":"spr_main_hero_right","path":"sprites/spr_main_hero_right/spr_main_hero_right.yy",},},
     {"id":{"name":"spr_main_hero_up","path":"sprites/spr_main_hero_up/spr_main_hero_up.yy",},},
-    {"id":{"name":"spr_main_hero","path":"sprites/spr_main_hero/spr_main_hero.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"tutorial","path":"rooms/tutorial/tutorial.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
