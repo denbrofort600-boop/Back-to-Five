@@ -1,7 +1,7 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_platform_for_tutorial",
-  "bboxMode":0,
+  "bboxMode":1,
   "bbox_bottom":15,
   "bbox_left":0,
   "bbox_right":15,
