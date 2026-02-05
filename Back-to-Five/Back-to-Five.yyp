@@ -24,11 +24,11 @@
   },
   "name":"Back-to-Five",
   "resources":[
-    {"id":{"name":"obj_box_for_tutor","path":"objects/obj_box_for_tutor/obj_box_for_tutor.yy",},},
+    {"id":{"name":"obj_collision","path":"objects/obj_collision/obj_collision.yy",},},
     {"id":{"name":"Obj_main_hero","path":"objects/Obj_main_hero/Obj_main_hero.yy",},},
-    {"id":{"name":"obj_platform_for_tutor","path":"objects/obj_platform_for_tutor/obj_platform_for_tutor.yy",},},
     {"id":{"name":"tutorial","path":"rooms/tutorial/tutorial.yy",},},
     {"id":{"name":"spr_box_in_test_room","path":"sprites/spr_box_in_test_room/spr_box_in_test_room.yy",},},
+    {"id":{"name":"spr_collision","path":"sprites/spr_collision/spr_collision.yy",},},
     {"id":{"name":"spr_main_hero_down","path":"sprites/spr_main_hero_down/spr_main_hero_down.yy",},},
     {"id":{"name":"spr_main_hero_left","path":"sprites/spr_main_hero_left/spr_main_hero_left.yy",},},
     {"id":{"name":"spr_main_hero_right","path":"sprites/spr_main_hero_right/spr_main_hero_right.yy",},},
