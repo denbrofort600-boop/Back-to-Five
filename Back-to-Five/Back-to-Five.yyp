@@ -25,6 +25,7 @@
   "name":"Back-to-Five",
   "resources":[
     {"id":{"name":"obj_collision","path":"objects/obj_collision/obj_collision.yy",},},
+    {"id":{"name":"obj_for_tutor","path":"objects/obj_for_tutor/obj_for_tutor.yy",},},
     {"id":{"name":"Obj_main_hero","path":"objects/Obj_main_hero/Obj_main_hero.yy",},},
     {"id":{"name":"tutorial","path":"rooms/tutorial/tutorial.yy",},},
     {"id":{"name":"spr_box_in_test_room","path":"sprites/spr_box_in_test_room/spr_box_in_test_room.yy",},},
