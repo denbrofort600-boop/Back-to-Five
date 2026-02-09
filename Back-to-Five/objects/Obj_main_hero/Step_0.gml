@@ -60,29 +60,10 @@ if (!jump_controll) {
 			onground = true;
 			vsp = 0
 		}
-	}
-	if (!place_meeting(x + hsp, y, obj_for_tutor)) {
-	    x += hsp;
-	} else {
-	    while (!place_meeting(x + sign(hsp), y, obj_for_tutor)) {
-	        x += sign(hsp);
-	    }
-	}
-	if (!place_meeting(x, y + vsp, obj_for_tutor)) {
-	    y += vsp;
-	} else {
-	    while (!place_meeting(x, y + sign(vsp), obj_for_tutor)) {
-	        y += sign(vsp);
-	    }
-	    if (vsp > 0) {
-			onground = true;
-			vsp = 0
-		}
-	}
-	
+	}	
 	if (keyboard_check_pressed(ord("E"))) {
-	    with (obj_for_tutor) {
-	        y += 600;
+	    with (inst_1FFC5A07) {
+	        y += 500;
 	    }
 	}
 }
