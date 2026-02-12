@@ -1,3 +1,6 @@
+if(keyboard_check(ord("Ctrl"))){
+	hsp += 10;
+}
 if (!jump_controll) {
 	key_up = keyboard_check(ord("W"));
 	key_down = keyboard_check(ord("S"));
@@ -61,9 +64,15 @@ if (!jump_controll) {
 			vsp = 0
 		}
 	}	
-	if (keyboard_check_pressed(ord("E"))) {
+	if (keyboard_check_pressed(ord("E")) && prov_e == 0) {
 	    with (inst_1FFC5A07) {
 	        y += 500;
+	    }
+		prov_e++;
+	}else if(keyboard_check_pressed(ord("E")) && prov_e == 1){
+		prov_e = 0;
+		with (inst_1FFC5A07) {
+	        y -= 500;
 	    }
 	}
 }

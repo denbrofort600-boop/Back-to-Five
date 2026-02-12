@@ -6,3 +6,4 @@ jump_strength = -20;
 jump_controll = (room == tutorial)
 hsp = 0;
 vsp = 0;
+prov_e = 0;
