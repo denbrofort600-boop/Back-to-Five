@@ -1,6 +1,3 @@
-if(keyboard_check(ord("Ctrl"))){
-	hsp += 10;
-}
 if (!jump_controll) {
 	key_up = keyboard_check(ord("W"));
 	key_down = keyboard_check(ord("S"));
@@ -38,7 +35,6 @@ if (!jump_controll) {
 }else{
 	key_left = keyboard_check(ord("A"));
 	key_right = keyboard_check(ord("D"));
-
 	hsp = (key_right - key_left) * move_speed;
 
 	if (keyboard_check_pressed(vk_space) && onground) {

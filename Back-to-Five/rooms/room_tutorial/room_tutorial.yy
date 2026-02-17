@@ -1,16 +1,16 @@
 {
   "$GMRoom":"v1",
-  "%Name":"tutorial",
+  "%Name":"room_tutorial",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_764C4368","path":"rooms/tutorial/tutorial.yy",},
-    {"name":"inst_4CC5BDBB","path":"rooms/tutorial/tutorial.yy",},
-    {"name":"inst_1C1E15CE","path":"rooms/tutorial/tutorial.yy",},
-    {"name":"inst_739A4DFE","path":"rooms/tutorial/tutorial.yy",},
-    {"name":"inst_1FFC5A07","path":"rooms/tutorial/tutorial.yy",},
+    {"name":"inst_764C4368","path":"rooms/room_tutorial/room_tutorial.yy",},
+    {"name":"inst_4CC5BDBB","path":"rooms/room_tutorial/room_tutorial.yy",},
+    {"name":"inst_1C1E15CE","path":"rooms/room_tutorial/room_tutorial.yy",},
+    {"name":"inst_739A4DFE","path":"rooms/room_tutorial/room_tutorial.yy",},
+    {"name":"inst_1FFC5A07","path":"rooms/room_tutorial/room_tutorial.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -28,7 +28,7 @@
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"tutorial",
+  "name":"room_tutorial",
   "parent":{
     "name":"room",
     "path":"folders/room.yy",

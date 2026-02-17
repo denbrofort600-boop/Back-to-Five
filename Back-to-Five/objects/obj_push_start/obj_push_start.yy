@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_collision",
-  "eventList":[],
+  "%Name":"obj_push_start",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_collision",
+  "name":"obj_push_start",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
@@ -32,5 +34,5 @@
     "path":"sprites/spr_for_invisible_obj/spr_for_invisible_obj.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
