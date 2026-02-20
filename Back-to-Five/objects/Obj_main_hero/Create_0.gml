@@ -2,8 +2,11 @@ onground = false;
 grav = 1;
 move_speed = 4;
 jump_strength = -20;
-
-jump_controll = (room == room_tutorial)
 hsp = 0;
 vsp = 0;
+jump_controll = (room == room_tutorial);
 prov_e = 0;
+pos_history_x = ds_list_create();
+pos_history_y = ds_list_create();
+max_history = game_get_speed(gamespeed_fps) * 5;
+rewind_cooldown = 0;
