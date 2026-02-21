@@ -30,6 +30,7 @@
     {"id":{"name":"Obj_main_hero","path":"objects/Obj_main_hero/Obj_main_hero.yy",},},
     {"id":{"name":"obj_peizaz","path":"objects/obj_peizaz/obj_peizaz.yy",},},
     {"id":{"name":"obj_push_start","path":"objects/obj_push_start/obj_push_start.yy",},},
+    {"id":{"name":"obj_unspeed","path":"objects/obj_unspeed/obj_unspeed.yy",},},
     {"id":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
     {"id":{"name":"room_tutorial","path":"rooms/room_tutorial/room_tutorial.yy",},},
     {"id":{"name":"spr_box_in_test_room","path":"sprites/spr_box_in_test_room/spr_box_in_test_room.yy",},},
