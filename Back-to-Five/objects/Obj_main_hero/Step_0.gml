@@ -25,8 +25,21 @@ if (keyboard_check_pressed(ord("E")) && rewind_cooldown <= 0 && ds_list_size(pos
     ds_list_clear(pos_history_x);
     ds_list_clear(pos_history_y);
     rewind_cooldown = game_get_speed(gamespeed_fps) * 5;
+	prov_e = 0;	
+	
+    if (prov_e == 0 && rewind_cooldown <= 0) {
+        with (inst_1FFC5A07) {
+            y -= 500;
+        }
+        prov_e++;
+    } else if (prov_e == 1 && rewind_cooldown <= 0) {
+        prov_e = 0;
+        with (inst_1FFC5A07) {
+            y += 500;
+        }
+    }
 }
-
+if(keyboard_check("Ctrl"))
 if (!jump_controll) {
     var key_up = keyboard_check(ord("W"));
     var key_down = keyboard_check(ord("S"));
@@ -93,15 +106,4 @@ if (!jump_controll) {
         }
     }
     
-    if (keyboard_check_pressed(ord("E")) && prov_e == 0 && rewind_cooldown <= 0) {
-        with (inst_1FFC5A07) {
-            y += 500;
-        }
-        prov_e++;
-    } else if (keyboard_check_pressed(ord("E")) && prov_e == 1 && rewind_cooldown <= 0) {
-        prov_e = 0;
-        with (inst_1FFC5A07) {
-            y -= 500;
-        }
-    }
 }
