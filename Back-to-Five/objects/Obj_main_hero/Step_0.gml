@@ -26,13 +26,11 @@ if (keyboard_check_pressed(ord("E")) && rewind_cooldown <= 0 && ds_list_size(pos
     ds_list_clear(pos_history_y);
     rewind_cooldown = game_get_speed(gamespeed_fps) * 5;
 }
-if (keyboard_check_pressed(ord("E"))) {
-    if (prov_e == 1){
-        with (inst_1FFC5A07) {
-            y += 1000;
-        }
-        prov_e = 0;
-    }
+if (keyboard_check_pressed(ord("E")) && prov_e == 1){
+	with (inst_1FFC5A07) {
+        y += 1000;
+	}
+    prov_e = 0;
 }
 move_speed = 4;
 if (keyboard_check(vk_control)) {
