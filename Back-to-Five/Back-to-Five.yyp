@@ -31,7 +31,7 @@
     {"id":{"name":"obj_peizaz","path":"objects/obj_peizaz/obj_peizaz.yy",},},
     {"id":{"name":"obj_push_start","path":"objects/obj_push_start/obj_push_start.yy",},},
     {"id":{"name":"obj_unspeed","path":"objects/obj_unspeed/obj_unspeed.yy",},},
-    {"id":{"name":"room_oproc","path":"rooms/room_oproc/room_oproc.yy",},},
+    {"id":{"name":"obj_zona","path":"objects/obj_zona/obj_zona.yy",},},
     {"id":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
     {"id":{"name":"room_tutorial","path":"rooms/room_tutorial/room_tutorial.yy",},},
     {"id":{"name":"spr_a","path":"sprites/spr_a/spr_a.yy",},},
@@ -51,13 +51,13 @@
     {"id":{"name":"spr_space","path":"sprites/spr_space/spr_space.yy",},},
     {"id":{"name":"spr_start_push","path":"sprites/spr_start_push/spr_start_push.yy",},},
     {"id":{"name":"spr_start_unpush","path":"sprites/spr_start_unpush/spr_start_unpush.yy",},},
+    {"id":{"name":"spr_zone","path":"sprites/spr_zone/spr_zone.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
     {"roomId":{"name":"room_tutorial","path":"rooms/room_tutorial/room_tutorial.yy",},},
-    {"roomId":{"name":"room_oproc","path":"rooms/room_oproc/room_oproc.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
