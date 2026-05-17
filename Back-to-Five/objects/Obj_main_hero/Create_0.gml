@@ -6,7 +6,7 @@ hsp = 0;
 vsp = 0;
 hsp_slow = 0;
 vsp_slow = 0;
-jump_controll = (room == room_tutorial);
+jump_controll = (room != room_island);
 prov_e = 1;
 pos_history_x = ds_list_create();
 pos_history_y = ds_list_create();
