@@ -63,6 +63,7 @@
     {"id":{"name":"spr_opr","path":"sprites/spr_opr/spr_opr.yy",},},
     {"id":{"name":"spr_pecok","path":"sprites/spr_pecok/spr_pecok.yy",},},
     {"id":{"name":"spr_peizaz","path":"sprites/spr_peizaz/spr_peizaz.yy",},},
+    {"id":{"name":"spr_pesok_aaaa","path":"sprites/spr_pesok_aaaa/spr_pesok_aaaa.yy",},},
     {"id":{"name":"spr_platform_for_tutorial","path":"sprites/spr_platform_for_tutorial/spr_platform_for_tutorial.yy",},},
     {"id":{"name":"spr_space","path":"sprites/spr_space/spr_space.yy",},},
     {"id":{"name":"spr_start_push","path":"sprites/spr_start_push/spr_start_push.yy",},},
