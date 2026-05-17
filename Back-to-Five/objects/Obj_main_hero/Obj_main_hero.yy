@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_main_hero",
+  "%Name":"obj_main_hero",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,7 +8,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_main_hero",
+  "name":"obj_main_hero",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
@@ -38,7 +38,7 @@
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_main_hero_down",
     "path":"sprites/spr_main_hero_down/spr_main_hero_down.yy",
