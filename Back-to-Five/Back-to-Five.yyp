@@ -32,6 +32,7 @@
     {"id":{"name":"obj_dver","path":"objects/obj_dver/obj_dver.yy",},},
     {"id":{"name":"obj_for_tutor","path":"objects/obj_for_tutor/obj_for_tutor.yy",},},
     {"id":{"name":"obj_main_hero","path":"objects/obj_main_hero/obj_main_hero.yy",},},
+    {"id":{"name":"obj_move_collision","path":"objects/obj_move_collision/obj_move_collision.yy",},},
     {"id":{"name":"obj_peizaz","path":"objects/obj_peizaz/obj_peizaz.yy",},},
     {"id":{"name":"obj_push_start","path":"objects/obj_push_start/obj_push_start.yy",},},
     {"id":{"name":"obj_unspeed","path":"objects/obj_unspeed/obj_unspeed.yy",},},
