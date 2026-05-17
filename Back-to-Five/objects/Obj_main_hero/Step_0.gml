@@ -126,7 +126,7 @@ if (!jump_controll) {
     // Прыжок при нажатии пробела и на земле
     if (keyboard_check_pressed(vk_space) && onground) {
         vsp = jump_strength;
-        onground = false;
+        onground--;
     }
     
     vsp += grav;
@@ -152,7 +152,7 @@ if (!jump_controll) {
             y += sign(vsp);
         }
         if (vsp > 0) {
-            onground = true;
+            onground = 2;
             vsp = 0;
         }
     }
@@ -170,7 +170,7 @@ if (!jump_controll) {
     if (place_meeting(x, y + vsp_slow, obj_unspeed)) {
         y += vsp_slow;
         if (vsp_slow > 0) {
-            onground = true;
+            onground = 2;
             vsp = 0; 
         }
     } else {
