@@ -36,7 +36,9 @@
     {"id":{"name":"obj_push_start","path":"objects/obj_push_start/obj_push_start.yy",},},
     {"id":{"name":"obj_unspeed","path":"objects/obj_unspeed/obj_unspeed.yy",},},
     {"id":{"name":"obj_zona","path":"objects/obj_zona/obj_zona.yy",},},
+    {"id":{"name":"odj_dver_to_leve","path":"objects/odj_dver_to_leve/odj_dver_to_leve.yy",},},
     {"id":{"name":"room_island","path":"rooms/room_island/room_island.yy",},},
+    {"id":{"name":"room_pesok","path":"rooms/room_pesok/room_pesok.yy",},},
     {"id":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
     {"id":{"name":"room_tutorial","path":"rooms/room_tutorial/room_tutorial.yy",},},
     {"id":{"name":"room_vulc","path":"rooms/room_vulc/room_vulc.yy",},},
@@ -71,6 +73,7 @@
     {"roomId":{"name":"room_island","path":"rooms/room_island/room_island.yy",},},
     {"roomId":{"name":"room_tutorial","path":"rooms/room_tutorial/room_tutorial.yy",},},
     {"roomId":{"name":"room_vulc","path":"rooms/room_vulc/room_vulc.yy",},},
+    {"roomId":{"name":"room_pesok","path":"rooms/room_pesok/room_pesok.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

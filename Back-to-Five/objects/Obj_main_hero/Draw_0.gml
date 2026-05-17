@@ -1,18 +1,28 @@
-draw_self()
-image_speed = 1;
-if(keyboard_check(ord("D"))){
-	image_speed = 0.75;
-	sprite_index = spr_main_hero_right;
-}else if(keyboard_check(ord("A"))){
-	image_speed = 0.75;
-	sprite_index = spr_main_hero_left;
-}else if(keyboard_check(ord("W"))){
-	sprite_index = spr_main_hero_up;
-}else if(keyboard_check(ord("S"))){
-	sprite_index = spr_main_hero_down;
-}else{
-	image_speed = 0;
+draw_self()  // Отрисовываем текущий спрайт объекта (вызываем стандартную процедуру отрисовки)
+image_speed = 1;  // Устанавливаем нормальную скорость анимации (1 кадр за игровой кадр)
+// Проверяем, нажата ли клавиша D (движение вправо)
+if (keyboard_check(ord("D"))) {
+    image_speed = 0.75;  // Уменьшаем скорость анимации для эффекта плавного движения
+    sprite_index = spr_main_hero_right;  // Меняем спрайт на анимацию движения вправо
 }
+// Проверяем, нажата ли клавиша A (движение влево)
+else if (keyboard_check(ord("A"))) {
+    image_speed = 0.75;  // Уменьшаем скорость анимации
+    sprite_index = spr_main_hero_left;  // Меняем спрайт на анимацию движения влево
+}
+// Проверяем, нажата ли клавиша W (движение вверх)
+else if (keyboard_check(ord("W"))) {
+    sprite_index = spr_main_hero_up;  // Меняем спрайт на анимацию движения вверх (без изменения скорости анимации)
+}
+// Проверяем, нажата ли клавиша S (движение вниз)
+else if (keyboard_check(ord("S"))) {
+    sprite_index = spr_main_hero_down;  // Меняем спрайт на анимацию движения вниз (без изменения скорости анимации)
+}
+// Если ни одна из клавиш движения не нажата — персонаж стоит на месте
+else {
+    image_speed = 0;  // Останавливаем анимацию (фиксируем текущий кадр)
+}
+// Проверяем, находится ли объект на том же месте, что и в предыдущем кадре (не двигается)
 if (x == xprevious and y == yprevious) {
-	 image_index = 0;
+    image_index = 0;  // Сбрасываем анимацию на первый кадр (кадр «покоя»)
 }
