@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_pesok_aaaa",
+  "%Name":"spr_pesok",
   "bboxMode":0,
-  "bbox_bottom":0,
+  "bbox_bottom":1535,
   "bbox_left":0,
-  "bbox_right":0,
+  "bbox_right":7999,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,12 +16,17 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":64,
+  "height":1536,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"5da73cf5-12ad-4708-a4ad-d5a96cf73713","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"5da73cf5-12ad-4708-a4ad-d5a96cf73713","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"7e25c22c-35a0-4120-b4b9-4c358bcb39cd","blendMode":0,"displayName":"Layer 3","isLocked":false,"name":"7e25c22c-35a0-4120-b4b9-4c358bcb39cd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d8a621f7-b63c-43b8-a4b5-c3f0e4a013a7","blendMode":0,"displayName":"Layer 4","isLocked":false,"name":"d8a621f7-b63c-43b8-a4b5-c3f0e4a013a7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"617d97db-f02e-4a68-b02b-edd835481b0e","blendMode":0,"displayName":"default","isLocked":false,"name":"617d97db-f02e-4a68-b02b-edd835481b0e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"da5d124e-47c4-4f77-94bc-af3fdc125831","blendMode":0,"displayName":"Layer 5","isLocked":false,"name":"da5d124e-47c4-4f77-94bc-af3fdc125831","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"167e5931-3bf5-487d-8764-b88c0ecf20d9","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"167e5931-3bf5-487d-8764-b88c0ecf20d9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_pesok_aaaa",
+  "name":"spr_pesok",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +38,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_pesok_aaaa",
+    "%Name":"spr_pesok",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +62,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_pesok_aaaa",
+    "name":"spr_pesok",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,7 +74,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1af963b4-54da-405d-ba31-5c1f609645e3","path":"sprites/spr_pesok_aaaa/spr_pesok_aaaa.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1af963b4-54da-405d-ba31-5c1f609645e3","path":"sprites/spr_pesok/spr_pesok.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"f533d933-8c69-472c-a3ea-f43785a33f6a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
@@ -86,5 +91,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":8000,
 }
