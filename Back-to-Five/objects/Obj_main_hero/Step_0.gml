@@ -47,19 +47,6 @@ if (keyboard_check(vk_control)) {
     move_speed = min(move_speed + 4, 20);
 }
 
-// === ВСПОМОГАТЕЛЬНАЯ ФУНКЦИЯ: толкание ящика ===
-function push_box(dx, dy) {
-    var box = instance_place(x + dx, y + dy, obj_move_collision);
-	show_debug_message(box)
-    if (box != noone) {
-        // Проверяем, свободно ли место ЗА ящиком
-        if (!place_meeting(box.x + dx, box.y + dy, obj_collision)){
-            return true; // Можно толкнуть
-        }
-    }
-    return false; // Нельзя толкнуть
-}
-
 // Режим без прыжков (jump_controll = false)
 if (!jump_controll) {
     var key_up = keyboard_check(ord("W"));
@@ -82,17 +69,9 @@ if (!jump_controll) {
     if (!place_meeting(x + hsp, y, obj_collision)) {
         x += hsp;
     } else {
-        // Пробуем толкнуть ящик
-        if (hsp != 0 && push_box(hsp, 0)) {
-            var box = instance_place(x + hsp, y, obj_move_collision);
-            box.x += hsp; // Двигаем ящик
-            x += hsp;     // Двигаем игрока
-        } else {
-            // Попиксельное движение до столкновения
-            while (!place_meeting(x + sign(hsp), y, obj_collision) && s < 10) {
-                x += sign(hsp);
-                s++;
-            }
+        while (!place_meeting(x + sign(hsp), y, obj_collision) && s < 10) {
+            x += sign(hsp);
+            s++;
         }
     }
 
@@ -101,22 +80,15 @@ if (!jump_controll) {
     if (!place_meeting(x, y + vsp, obj_collision)) {
         y += vsp;
     } else {
-        // Пробуем толкнуть ящик
-        if (vsp != 0 && push_box(0, vsp)) {
-            var box = instance_place(x, y + vsp, obj_move_collision);
-            box.y += vsp; // Двигаем ящик
-            y += vsp;     // Двигаем игрока
-        } else {
-            // Попиксельное движение до столкновения
-            while (!place_meeting(x, y + sign(vsp), obj_collision) && s < 10) {
-                y += sign(vsp);
-                s++;
-            }
+        // Попиксельное движение до столкновения
+        while (!place_meeting(x, y + sign(vsp), obj_collision) && s < 10) {
+            y += sign(vsp);
+            s++;
         }
     }
-
+}
 // Режим с прыжками (jump_controll = true)
-} else {
+else {
     var key_left = keyboard_check(ord("A"));
     var key_right = keyboard_check(ord("D"));
     hsp = (key_right - key_left) * move_speed;
@@ -130,15 +102,16 @@ if (!jump_controll) {
     }
     
     vsp += grav;
-    if (push_box(hsp, 0)) {
-            var box = instance_place(x + hsp, y, obj_move_collision);
+    if (place_meeting(x + hsp, y, obj_move_collision)) {
+        var box = instance_place(x + hsp, y, obj_move_collision);
+        if (box.push_box(hsp, 0)) {
             box.x += hsp;
         }
+    }
     // Движение по горизонтали с толканием ящика
     if (!place_meeting(x + hsp, y, obj_collision) and !place_meeting(x + hsp, y, obj_move_collision)) {
         x += hsp;
     } else {
-
         while (!place_meeting(x + sign(hsp), y, obj_collision) and !place_meeting(x + sign(hsp), y, obj_move_collision)) {
             x += sign(hsp);
         }
@@ -146,13 +119,12 @@ if (!jump_controll) {
     // Движение по вертикали с толканием ящика
     if (!place_meeting(x, y + vsp, obj_collision) and !place_meeting(x, y + vsp, obj_move_collision)) {
         y += vsp;
-    } else
-	{
+    } else {
         while (!place_meeting(x, y + sign(vsp), obj_collision) and !place_meeting(x, y + sign(vsp), obj_move_collision)) {
             y += sign(vsp);
         }
         if (vsp > 0) {
-            onground = 2;
+            onground = jumpCount();
             vsp = 0;
         }
     }
@@ -170,7 +142,7 @@ if (!jump_controll) {
     if (place_meeting(x, y + vsp_slow, obj_unspeed)) {
         y += vsp_slow;
         if (vsp_slow > 0) {
-            onground = 2;
+            onground = jumpCount();
             vsp = 0; 
         }
     } else {
@@ -179,3 +151,5 @@ if (!jump_controll) {
         }
     }
 }
+
+

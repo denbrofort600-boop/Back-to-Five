@@ -12,3 +12,16 @@ pos_history_x = ds_list_create();
 pos_history_y = ds_list_create();
 max_history = game_get_speed(gamespeed_fps) * 5;
 rewind_cooldown = 0;
+
+function jumpCount() {
+	if (!variable_global_exists("level")) {
+		return 1;
+	}
+	
+	if (global.level > 2) {
+		return 2;
+	}
+	else {
+		return 1;
+	}
+}
